@@ -1,0 +1,30 @@
+[versions]
+agp = "8.5.2"
+kotlin = "2.0.21"
+composeBom = "2024.09.00"
+room = "2.6.1"
+nav = "2.8.2"
+pdfbox = "2.0.27.0"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+
+[libraries]
+androidx-core = { module = "androidx.core:core-ktx", version = "1.13.1" }
+androidx-activity = { module = "androidx.activity:activity-compose", version = "1.9.2" }
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-compose", version = "2.8.6" }
+androidx-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version = "2.8.6" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-compose-tooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-compose-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-material3 = { module = "androidx.compose.material3:material3" }
+androidx-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "nav" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+pdfbox = { module = "com.tom-roush:pdfbox-android", version.ref = "pdfbox" }
